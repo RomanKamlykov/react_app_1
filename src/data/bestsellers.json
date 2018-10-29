@@ -1,0 +1,14 @@
+[
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 1", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "thor_s_hammers"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 2", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "thor_s_hammers"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 3", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "axes"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 4", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "axes"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 5", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "rings"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 6", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "rings"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 7", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "pendants"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 8", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "pendants"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 9", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "chains"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 10", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "chains"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 11", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "gold"},
+    { "img": "img/02_bestsellers/item.png", "name": "Viking Skull Ring 12", "price": "USD 2888.00", "priceOld": "USD 2888.00", "interest": "(10% off)", "info": "Free shipping", "category": "gold"}
+]

@@ -1,0 +1,133 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 278px);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;        
+    
+}
+
+.item {
+    width: 278px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.15);
+    border-bottom: 1px solid black;
+    transition: all 0.2s;
+    .img {
+        height: 225px;
+        overflow: hidden;
+    }
+    .text {
+        padding: 0px 10px;
+        div {
+            margin: 6px 0px;
+            position: relative;
+        }            
+        font-size: 14px;
+        font-family: "OpenSans";
+        line-height: 1.2;
+        .name {
+            color: rgb(33, 33, 33);
+        }
+        .price {
+            color: rgb(33, 33, 33);
+            font-weight: bold;
+        }
+        .stock {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            .price_old {
+                color: rgb(104, 172, 113);
+                text-decoration: line-through;
+            }                
+            .interest {
+                color: #ffffff;
+                background-color: #68ac71;                   
+            }
+        }           
+
+        .info {
+            font-size: 12px;
+            color: rgb(172, 172, 172);
+        }
+    }     
+}
+
+
+.prev, .next {
+    position: absolute;
+    transition: 0.5s;
+}
+
+.prev:hover, .next:hover {        
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.15);
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .items {
+        grid-template-columns: repeat(auto-fill, 236px);
+        grid-column-gap: 21px;
+    }
+
+    .item {
+        width: 236px;
+        height: 276px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.15);
+        border-bottom: 1px solid black;
+        .img {
+            //width: 235px;
+            height: 190px;
+            overflow:hidden;
+        }
+        .text {
+            padding: 0px 10px;
+            div {
+                margin: 6px 0px;
+                position: relative;
+            }            
+            font-size: 14px;
+            font-family: "OpenSans";
+            line-height: 1.1;
+            .name {
+                color: rgb(33, 33, 33);
+                //font-weight: bold;
+            }
+            .price {
+                color: rgb(33, 33, 33);
+                font-weight: bold;
+            }
+            .stock {
+                position: static;
+                display: table;
+                .price_old {
+                    color: rgb(104, 172, 113);
+                    text-decoration: line-through;
+                }                
+                .interest {
+                    color: #ffffff;
+                    background-color: #68ac71;                   
+                }
+            }           
+
+            .info {
+                font-size: 12px;
+                color: rgb(172, 172, 172);
+            }
+        }     
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .item {
+        width: 290px;
+        height: 330px;
+        margin: auto;    
+        
+        .img {
+            height: 248px;            
+        }
+    }
+}

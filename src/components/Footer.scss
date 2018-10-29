@@ -1,0 +1,158 @@
+#footer {
+    height: 290px;
+    position: relative;
+    border-top: 2px solid black;        
+    background-image: url(../img/05_footer/tree.png);
+    background-position: center -60px;
+    background-repeat: no-repeat;    
+    background-size: 346px;
+
+    //fonts    
+    h4 {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(33, 33, 33);
+        font-weight: bold;
+        line-height: 30px;
+    }
+    ul > li {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(33, 33, 33);
+        line-height: 30px;
+    }
+    input {
+        font-size:14px;
+        font-family: "OpenSans";
+        color: rgb(33, 33, 33);        
+        border: none;        
+        background-color: transparent;
+        border-bottom:1px solid black;
+    }
+
+    //background image with opacity
+    &::before {
+        content: "";
+        background-color: #dbdbdb;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -2;   
+    }    
+    &::after {
+        content: "";
+        background: url(../img/05_footer/background.png);
+        background-position: center;
+        opacity: 0.102;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+
+    //positioning
+    > div {
+        width: 1172px;
+        margin: auto;
+        position: relative;
+
+        div {
+            position: absolute;
+            top: 20px;
+        }
+        .customer {
+            left: 80px;
+        }
+        .items {
+            left: 305px;
+        }
+        .contacts {
+            left: 750px;
+            width: 333px;
+            input {
+                width:333px;        
+            }
+            button {
+                float: right;
+                width: 120px;
+                height: 40px;
+            }
+        }
+    }
+    .logo {        
+        height: 166px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -83px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    #footer {
+        > div {
+            width: 750px;
+
+            .customer {
+                left: 15px;
+            }
+            .items {
+                left: 204px;
+            }
+            .contacts {
+                left: 515px;
+                width: 220px;
+                input {
+                    width: 220px;
+                }
+            }
+        }
+        .logo {
+            height: 110px;
+            top: -55px;
+        }        
+    }    
+}
+
+
+@media screen and (max-width: 575px) {
+    #footer {
+        height: 530px;
+        > div {
+            width: 320px;
+
+            div {
+                top: 45px;            
+            }
+            .customer {
+                left: 15px;
+            }
+            .items {
+                left: 175px;
+            }
+            .contacts {
+                left: 0px;
+                top: 285px;
+                width: 320px;
+                text-align: center;
+                input {
+                    width: 220px;
+                }
+                button {
+                    float: none;
+                }
+            }
+        }
+        .logo {
+            height: 74px;
+            top: -37px;
+        }        
+    }
+}
+
