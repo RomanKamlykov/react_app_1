@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/RomanKamlykov.github.io/react_app_1_demo.git/precache-manifest.f8cdbdad318f4cb73f094fe2d7b8a9ce.js"
+  "/RomanKamlykov.github.io/react_app_1_demo/precache-manifest.fbafa755411b9ead5f304f8c45512a3e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/RomanKamlykov.github.io/react_app_1_demo.git/index.html", {
+workbox.routing.registerNavigationRoute("/RomanKamlykov.github.io/react_app_1_demo/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
