@@ -58,7 +58,7 @@ class Bestsellers extends React.Component {
                     <div className="desktop">
 
                         <div className="topic">
-                            <img src="img/icon.png" alt="" />
+                            <img src="img/02_bestsellers/icon.png" alt="" />
                             <span className="BESTSELLERS"> BESTSELLERS</span>
 
                             <div className="search">

@@ -1,18 +1,18 @@
 {
   "main.css": "/react_app_1/static/css/main.2958aa79.chunk.css",
-  "main.js": "/react_app_1/static/js/main.8d269e40.chunk.js",
-  "main.js.map": "/react_app_1/static/js/main.8d269e40.chunk.js.map",
+  "main.js": "/react_app_1/static/js/main.338cb46d.chunk.js",
+  "main.js.map": "/react_app_1/static/js/main.338cb46d.chunk.js.map",
   "static/css/1.94a4f68a.chunk.css": "/react_app_1/static/css/1.94a4f68a.chunk.css",
   "static/js/1.7d8caf44.chunk.js": "/react_app_1/static/js/1.7d8caf44.chunk.js",
   "static/js/1.7d8caf44.chunk.js.map": "/react_app_1/static/js/1.7d8caf44.chunk.js.map",
   "runtime~main.js": "/react_app_1/static/js/runtime~main.61ba83d2.js",
   "runtime~main.js.map": "/react_app_1/static/js/runtime~main.61ba83d2.js.map",
   "static/media/index.scss": "/react_app_1/static/media/OpenSans-Bold.f5331cb6.ttf",
-  "static/media/Header.scss": "/react_app_1/static/media/burger.d8730740.svg",
+  "static/media/Header.scss": "/react_app_1/static/media/ellipse_small.1f56895b.svg",
   "static/media/Footer.scss": "/react_app_1/static/media/background.f857ad30.png",
-  "static/css/1.94a4f68a.chunk.css.map": "/react_app_1/static/css/1.94a4f68a.chunk.css.map",
   "static/css/main.2958aa79.chunk.css.map": "/react_app_1/static/css/main.2958aa79.chunk.css.map",
+  "static/css/1.94a4f68a.chunk.css.map": "/react_app_1/static/css/1.94a4f68a.chunk.css.map",
   "index.html": "/react_app_1/index.html",
-  "precache-manifest.9cb3aac63f471cd61345384165e50147.js": "/react_app_1/precache-manifest.9cb3aac63f471cd61345384165e50147.js",
+  "precache-manifest.64683bf294e2302ca974b9d6affb5df6.js": "/react_app_1/precache-manifest.64683bf294e2302ca974b9d6affb5df6.js",
   "service-worker.js": "/react_app_1/service-worker.js"
 }

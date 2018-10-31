@@ -12,7 +12,7 @@ import './Updates.scss';
 const Updates = (props) => (
     <div id="updates">
         <div className="topic">
-            <img src="img/icon.png" alt="" className="icon" />
+            <img src="img/02_bestsellers/icon.png" alt="" className="icon" />
             <span className="Fresh_updates"> Fresh updates</span>
         </div>
 
