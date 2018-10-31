@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d7d5d4588a9f50c99264bc12e4892a7c",
-    "url": "/react_app_1/static/media/OpenSans-Regular.d7d5d458.ttf"
+    "revision": "d42baa5988ff730bb4c4569508b20eb1",
+    "url": "/react_app_1/static/media/ComicRunes.d42baa59.otf"
   },
   {
-    "revision": "8d269e40dd2decf6e90f",
+    "revision": "338cb46ddc3aa493dc9b",
     "url": "/react_app_1/static/css/main.2958aa79.chunk.css"
   },
   {
@@ -28,24 +28,20 @@ self.__precacheManifest = [
     "url": "/react_app_1/static/media/OpenSans-Bold.f5331cb6.ttf"
   },
   {
-    "revision": "d42baa5988ff730bb4c4569508b20eb1",
-    "url": "/react_app_1/static/media/ComicRunes.d42baa59.otf"
+    "revision": "d7d5d4588a9f50c99264bc12e4892a7c",
+    "url": "/react_app_1/static/media/OpenSans-Regular.d7d5d458.ttf"
   },
   {
-    "revision": "8d269e40dd2decf6e90f",
-    "url": "/react_app_1/static/js/main.8d269e40.chunk.js"
-  },
-  {
-    "revision": "9ff12f694e5951a6f51a9d63b05062e7",
-    "url": "/react_app_1/static/media/OpenSans-Light.9ff12f69.ttf"
+    "revision": "338cb46ddc3aa493dc9b",
+    "url": "/react_app_1/static/js/main.338cb46d.chunk.js"
   },
   {
     "revision": "49f89e34d03233b1f27788f75df7a40a",
     "url": "/react_app_1/static/media/OpenSans-ExtraBold.49f89e34.ttf"
   },
   {
-    "revision": "1f56895bf37e239a6f558181c75128ce",
-    "url": "/react_app_1/static/media/ellipse_small.1f56895b.svg"
+    "revision": "9ff12f694e5951a6f51a9d63b05062e7",
+    "url": "/react_app_1/static/media/OpenSans-Light.9ff12f69.ttf"
   },
   {
     "revision": "9e1ffb495058fd63dbc82723bf454540",
@@ -56,6 +52,10 @@ self.__precacheManifest = [
     "url": "/react_app_1/static/media/burger.d8730740.svg"
   },
   {
+    "revision": "1f56895bf37e239a6f558181c75128ce",
+    "url": "/react_app_1/static/media/ellipse_small.1f56895b.svg"
+  },
+  {
     "revision": "1019210aac85cafe740ed74d0dec96e5",
     "url": "/react_app_1/static/media/tree.1019210a.png"
   },
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/react_app_1/static/css/1.94a4f68a.chunk.css"
   },
   {
-    "revision": "9bb54a318868064435fc579ed99330ce",
+    "revision": "0c299608ae61ff1f60bf553491f89525",
     "url": "/react_app_1/index.html"
   }
 ];
