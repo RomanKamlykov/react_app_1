@@ -1,176 +1,86 @@
-#bestsellers {
-    width: 1172px;
-    margin: auto;
+/*
+  section.bestsellers
+  ├─ div.topic
+  ├─ nav.nav
+  │ ├─ ul
+  │ │ └─ v-for: li ─ button
+  │ └─ div.control
+  │   └─ button * 3
+  └─ div.items
+    └─ v-for: div.item
+*/
+
+.bestsellers {
+  width: var(--desktop-width);
+  margin: auto;
+  .topic {
+    height: 80px;
+    display: flex; align-items: center;
+    img {
+      padding: 0 15px;
+    }
+    span {
+      font-size: 24px; font-family: "OpenSans"; font-weight: bold; color: var(--black-color); text-transform: uppercase;
+    }
+  }
+  .nav {
+    height: 80px;
+    padding: 0 15px;
     position: relative;
-    margin-bottom: 50px;
-
-    .prev, .next {
-        position: absolute;
-        height: 45px;
-        width: 13px;
-        top: 47px;
-    }
-    
-    .prev {
-        right: 70px;
-    }
-
-    .next {
-        right: 0px;
-    }
-
-    .topic {
-        height: 45px;
-        padding-left: 15px;
-        position: relative;
-
-        .BESTSELLERS {
-            font-size: 24px;
-            font-family: "OpenSans";
-            color: rgb(33, 33, 33);
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 1.5;
-            vertical-align: middle;
+    ul {
+      height: inherit;
+      display: flex; align-items: center;
+      list-style: none;
+      li {
+        &:hover { background-color: var(--white-hover-color); }
+        &.active { border-bottom: 1px solid black; margin-bottom: -1px; }
+        button {
+          padding: 0 15px;
+          font-size: 16px;
+          font-family: "Segoe UI"; color: var(--black-color);
+          line-height: 40px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
         }
-
-        .search {
-            height: 19px;
-            width: 19px;
-
-            position: absolute;
-            top: 60px;
-            right: 100px;            
-        }            
+      }
     }
-
-    .desktop {        
-        .items {
-            transition: all 0.2s;
-        }
-        .nav {
-            height: 45px;
-            a.nav-link {
-                color: black;
-                padding: 0.2rem 1rem;
-                
-                &.active {
-                    border-bottom: 1px solid black;
-                }
-            }
-        }    
-        .navbar {
-            position: relative;
-                      
-            .more {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                height: 45px;
-                width: 83px;
-                text-align: center;
-                padding-top: 11px;                
-
-
-                span {
-                    font-size: 14px;
-                    font-family: "OpenSans";
-                    text-transform: uppercase;
-                    //line-height: 45px;
-                }
-
-            }
-        }
+    .control {
+      height: inherit;
+      display: flex; align-items: center;
+      position: absolute; top: 0; right: 15px;
+      font-family: "Segoe UI"; color: var(--black-color);
+      * { 
+        padding: 0 5px;
+        line-height: 40px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      .prev, .next, .search {
+        font-size: 30px;
+        &:hover { background-color: var(--white-hover-color); }
+      }
     }
-
-    .mobile {
-        display: none;
-    }
-    
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 280px); justify-content: space-between; align-content: start;
+    row-gap: 30px;
+  }
 }
 
-@media screen and (min-width: 576px) and (max-width: 991px) {
-    #bestsellers {
-        width: 750px;
-        margin-bottom: 35px;
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  .bestsellers {
+    width: var(--tablet-width);
+    .items {
+      grid-template-columns: repeat(3, 236px);
     }
+  }
 }
 
 @media screen and (max-width: 575px) {
-    #bestsellers {
-        width: 320px;
-
-        .desktop {
-            display: none;
-        }
-        .mobile {
-            display: block;
-            width: 320px;
-            transition: all 0.2s;
-
-            .topic {        
-                .search {
-                    top: -40px;
-                    right: 13px;            
-                }            
-            }
-
-            > div {
-                position: relative;
-                margin-bottom: 28px;
-                p {
-                    padding: 0px 15px;
-                    font-size: 16px;
-                    font-family: "OpenSans";
-                    color: rgb(33, 33, 33);
-                    line-height: 0.875;
-                }
-            }
-            .slider {
-                overflow: hidden;
-                height: 330px;
-    
-                .items {
-                    grid-template-columns: 1fr;
-                }
-                .prev {
-                    bottom: 0px;
-                    left: 0px;
-                    width: 13px;
-                    height: 330px;
-                }
-                .next {
-                    bottom: 0px;
-                    right: 0px;
-                    width: 13px;
-                    height: 330px;
-                }
-            }
-            .nextCategory {
-                margin: auto;
-                height: 20px;
-                width: 83px;
-                text-align: center;
-                position: relative;
-
-                .prev {
-                    height: inherit;
-                    width: 13px;
-                    top: 3px;
-                    left: 0px;
-                }
-                span {
-                    font-size: 14px;
-                    font-family: "OpenSans";
-                    text-transform: uppercase;                   
-                }
-                .next {
-                    height: inherit;
-                    width: 13px;
-                    top: 3px;
-                    right: 0px;
-                }
-            }
-        }
-    }
+  // work in progress
 }

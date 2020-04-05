@@ -1,158 +1,113 @@
-#footer {
-    height: 290px;
+/*
+  footer.footer
+  └─ div.content
+    ├─ div.customer
+    ├─ div.items
+    ├─ div.logo
+    └─ div.contacts
+*/
+    
+.footer {
+  height: 290px;
+  margin-top: 100px;
+  background-color: var(--footer-bg-color);
+  background-image: url("../assets/img/05_footer/tree.png"), url("../assets/img/05_footer/background2.png");
+  background-repeat: no-repeat, repeat;
+  background-position: center -60px, center top;
+  border-top: 2px solid black;
+  .content {
+    width: var(--desktop-width); height: inherit;
+    margin: auto;
     position: relative;
-    border-top: 2px solid black;        
-    background-image: url(../img/05_footer/tree.png);
-    background-position: center -60px;
-    background-repeat: no-repeat;    
-    background-size: 346px;
-
-    //fonts    
+    ul {
+      list-style: none;
+      li a {
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: var(--black-color);
+        line-height: 30px;
+      }
+    }
     h4 {
-        font-size: 14px;
-        font-family: "OpenSans";
-        color: rgb(33, 33, 33);
-        font-weight: bold;
-        line-height: 30px;
+      font-size: 14px;
+      font-family: "OpenSans";
+      color: var(--black-color);
+      font-weight: bold;
+      line-height: 30px;
     }
-    ul > li {
-        font-size: 14px;
-        font-family: "OpenSans";
-        color: rgb(33, 33, 33);
-        line-height: 30px;
-    }
-    input {
-        font-size:14px;
-        font-family: "OpenSans";
-        color: rgb(33, 33, 33);        
-        border: none;        
-        background-color: transparent;
-        border-bottom:1px solid black;
-    }
-
-    //background image with opacity
-    &::before {
-        content: "";
-        background-color: #dbdbdb;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -2;   
-    }    
-    &::after {
-        content: "";
-        background: url(../img/05_footer/background.png);
-        background-position: center;
-        opacity: 0.102;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;   
-    }
-
-    //positioning
     > div {
-        width: 1172px;
-        margin: auto;
-        position: relative;
+      position: absolute;
+    }
+    .customer {
+      top: 20px; left: 80px;
+    }
+    .items {
+      top: 20px; left: 305px;
+    }
+    .logo {
+      top: -83px; left: 0; right: 0;
+      text-align: center;
+      pointer-events: none; //the element won't overlap previous elements in the DOM
+      img { height: 166px; }
+    }
+    .contacts {
+      width: 320px;
+      top: 20px; left: 750px;
+      input[type=text] {
+        width: 320px;
+        line-height: 30px;
+        font-size: 14px;
+        font-family: "OpenSans"; color: var(--black-color);
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+      }
+      input[type=submit] {
+        width: 120px;
+        height: 40px;
+        margin-top: 40px;
+        float: right;
 
-        div {
-            position: absolute;
-            top: 20px;
-        }
-        .customer {
-            left: 80px;
-        }
-        .items {
-            left: 305px;
-        }
-        .contacts {
-            left: 750px;
-            width: 333px;
-            input {
-                width:333px;        
-            }
-            button {
-                float: right;
-                width: 120px;
-                height: 40px;
-            }
-        }
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: "Segoe UI"; color: var(--white-color);
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--black-color);
+        &:hover { background-color: var(--black-hover-color); }
+      }
     }
-    .logo {        
-        height: 166px;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        top: -83px;
-    }
+  }
 }
 
-@media screen and (min-width: 576px) and (max-width: 991px) {
-    #footer {
-        > div {
-            width: 750px;
-
-            .customer {
-                left: 15px;
-            }
-            .items {
-                left: 204px;
-            }
-            .contacts {
-                left: 515px;
-                width: 220px;
-                input {
-                    width: 220px;
-                }
-            }
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  .footer {
+    margin-top: 70px;
+    .content {
+      width: var(--tablet-width);
+      .customer {
+        left: 15px;
+      }
+      .items {
+        left: 204px;
+      }
+      .logo {
+        top: -55px;
+        img { height: 110px; }
+      }
+      .contacts {
+        left: 515px;
+        width: 220px;
+        input[type=text] {
+          width: 220px;
         }
-        .logo {
-            height: 110px;
-            top: -55px;
-        }        
-    }    
+      }
+    }
+  }
 }
-
 
 @media screen and (max-width: 575px) {
-    #footer {
-        height: 530px;
-        > div {
-            width: 320px;
-
-            div {
-                top: 45px;            
-            }
-            .customer {
-                left: 15px;
-            }
-            .items {
-                left: 175px;
-            }
-            .contacts {
-                left: 0px;
-                top: 285px;
-                width: 320px;
-                text-align: center;
-                input {
-                    width: 220px;
-                }
-                button {
-                    float: none;
-                }
-            }
-        }
-        .logo {
-            height: 74px;
-            top: -37px;
-        }        
-    }
+  // work in progress
 }
-

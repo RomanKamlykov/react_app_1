@@ -1,35 +1,21 @@
-#seo {
-    width: 1172px;
-    margin: auto;
-    padding: 0px 15px 80px;
-    p {
-        font-size: 14px;
-        font-family: "OpenSans";
-        color: rgb(33, 33, 33);
-        line-height: 1.286;
-        text-align: left;
-    }
-        
+.seo {
+  width: var(--desktop-width);
+  margin: auto;
+  padding: 20px 15px;
+  p {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: var(--black-color);
+    line-height: normal;
+  }
 }
 
-@media screen and (min-width: 576px) and (max-width: 991px) {
-    #seo {
-        width: 750px;
-        padding: 0px 15px 60px;
-
-        p {
-            font-size: 14px;
-            font-family: "OpenSans";
-            color: rgb(33, 33, 33);
-            line-height: 1.286;
-            text-align: left;
-        }
-    }
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  .seo {
+    width: var(--tablet-width);
+  }
 }
 
 @media screen and (max-width: 575px) {
-    #seo {
-        width: 320px;
-        padding: 0px 15px 40px;
-    }
+  // work in progress
 }
